@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main()
+{
+   int a=40,b=30; //Assign a value to a variables 
+
+   Printf("Before swapping a:%d, b:%d\n",a,b); //before swapping the numbers 
+   
+   //swapping numbers
+   a=a+b; //a=70(40+30)
+   b=a-b; //b=40 (70-30)
+   a=a-b; //a=30 (70-40)
+ 
+  Printf("After swapping a:%d, b:%d\n",a,b); // after swapping the numbers 
+
+  return 0;
+}
