@@ -6,7 +6,7 @@ int main()
    printf("Enter a number to find the sum of digits:");
    scanf("%d",&num);
    sum=sumofdigits (num);
-   Printf ("sumofdigits of the number %d=%d",num,sum);
+   printf ("sumofdigits of the number %d=%d",num,sum);
    return 0;
 }
 int sumofdigits (int n) //recursion function 
