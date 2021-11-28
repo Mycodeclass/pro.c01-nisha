@@ -1,0 +1,17 @@
+#include<stdio.h>
+int sumofdigits (int n); //function prototype 
+int main()
+{
+   int num,sum;
+   printf("Enter a number to find the sum of digits:");
+   Scanf("%d",&num);
+   sum=sumofdigits (num);
+   Printf ("sumofdigits of the number %d=%d",num,sum);
+   return 0;
+}
+int sumofdigits (int n) //recursion function 
+{
+   if(n==0)
+      return 0;
+   return ((n%10)+sumofdigits (n/10));
+}
