@@ -1,0 +1,27 @@
+#include <stdio.h>
+int lcm(int a,int b); 
+int main()
+ { 
+   int n1,n2,LCM;
+   printf("Enter two numbers to find lcm: ");    
+   scanf("%d%d",&n1,&n2);
+   if(n1>n2) 
+   LCM = lcm(n2,n1); 
+   else 
+   LCM = lcm(n1,n2); 
+   printf("LCM of %d and %d =%d",n1,n2,LCM);
+   return 0; 
+} 
+  int lcm(int a,int b) 
+{ 
+  static int mult=0;
+  mult += b; 
+  if((mult%a==0)&&(mult%b==0)) 
+   { 
+     return mult; 
+   } 
+   else 
+   { 
+     return lcm(a, b); 
+   } 
+}
